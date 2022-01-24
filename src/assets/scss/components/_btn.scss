@@ -1,0 +1,27 @@
+.btn{
+    height: 48px;
+    width: 170px;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+    border: none;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px / 16px *100%;
+    color: #FFFFFF;
+    cursor: pointer;
+    &:hover{
+        background-color: #fff;
+        color: #1e20ad;
+        transition: 2s;
+        -webkit-transition: 2s;
+        -moz-transition: 2s;
+        -ms-transition: 2s;
+        -o-transition: 2s;
+        box-shadow:inset rgba(0, 0, 0, 0.2) 0 -2px 5px, inset rgba(252, 255, 255, 0.3) 0 2px 5px, rgba(0, 0, 0, 0.8) 0 2px 5px -1px;
+        -webkit-box-shadow: inset rgba(0, 0, 0, 0.2) 0 -2px 5px, inset rgba(252, 255, 255, 0.3) 0 2px 5px, rgba(0, 0, 0, 0.8) 0 2px 5px -1px;
+    }
+}

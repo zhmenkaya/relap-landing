@@ -1,0 +1,17 @@
+.menu{
+    display: flex;
+    &__item{
+        margin-right: 30px;
+    }
+    &__link{
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 600;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 24 / 16 *100%;
+        &:hover {
+            color: #ead0f5;
+        }
+    }
+}
