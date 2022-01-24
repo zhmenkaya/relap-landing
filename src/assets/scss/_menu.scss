@@ -1,7 +1,13 @@
 .menu{
-    display: flex;
+    &__list{
+        list-style-type: none;
+        display: flex;
+        &:first-child{
+            margin-left: 0;
+        }
+    }
     &__item{
-        margin-right: 30px;
+        margin-left: 30px;
     }
     &__link{
         text-decoration: none;
