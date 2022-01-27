@@ -1,10 +1,176 @@
 .corporis-suscipit{
+    height: 100vh;
+    position: relative;
+    &__container{
+        max-width: 1305px;
+        margin-left: auto;
+        @media screen and (min-width:1441px) {
+            margin: 0 auto;
+        }
+        @media screen and (max-width:1280px) {
+            max-width: 1190px;
+        }
+        @media screen and (max-width:1130px) {
+            max-width: 1030px;
+        }
+        @media screen and (max-width:992px) {
+            max-width: 730px;
+        }
+        @media screen and (max-width:768px) {
+            max-width: 545px;
+        }
+        @media screen and (max-width:576px) {
+            max-width: 500px;
+        }
+        @media screen and (max-width:360px) {
+            max-width: 330px;
+        }
+        @media screen and (max-width:320px) {
+            max-width: 300px;
+        }
+    }
     &__wrapper{
+        margin:96px 0 0 0;
         display: flex;
+        justify-content: space-between;
+        @media screen and (max-width:768px) {
+            flex-wrap: wrap;
+        }
+        
     }
     &__content{
         display: flex;
         flex-direction: column;
     }
-    
+    &__subtitle{
+        margin: 45px 0 18px 0;
+    }
+    &__title{
+        margin-bottom: 55px;
+        
+    }
+    &__accordion-box{
+        max-width: 470px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__wrap-img{
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        position: relative;
+        z-index: 5;
+        margin-bottom: 128px;
+        -webkit-box-shadow: 33px -33px 0px 0px rgba(200, 109, 215, 1) inset;
+        -moz-box-shadow: 33px -33px 0px 0px rgba(200, 109, 215, 1) inset;
+        box-shadow: 33px -33px 0px 0px rgba(200, 109, 215, 1) inset;
+        // &::before{
+        //     content:'';
+        //     display: block;
+        //     width: 705px;
+        //     height: 544px;
+        //     position: absolute;
+        //     bottom: -33px;
+        //     left: -33px;
+        //     background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+        //     border-top-left-radius: 3px;
+        //     border-bottom-left-radius: 3px;
+        //     z-index: -1;
+            // @media screen and (max-width:1280px) {
+            //     width: 520px;
+            //     height: 431px
+            // }
+        }
+        // @media screen and (max-width:1280px) {
+        //     width: 50%;
+        // }
+    &__image{
+        width: 100%;
+    }
+    &__play{
+        width: 116px;
+        height: 116px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        background: #fff;
+        background-image: url("./../images/play.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.101959);
+        box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.101959);
+        position: absolute;
+        right: 43.61%;
+        top: 28.71%;
+        z-index: 15;
+        border:none;
+        &:hover{
+            // background: red;
+            transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            // transition: 0.5s;
+            // -webkit-transition: 0.5s;
+            // -moz-transition: 0.5s;
+            // -ms-transition: 0.5s;
+            // -o-transition: 0.5s;
+            // box-shadow: inset rgba(0, 0, 0, 0.9) 0 -2px 5px, inset #e3ecece6 0 2px 5px, rgba(0, 0, 0, 0.8) 0 2px 5px -1px;
+            // -webkit-box-shadow: inset rgba(0, 0, 0, 0.9) 0 -2px 5px, inset #e3ecece6 0 2px 5px, rgba(0, 0, 0, 0.8) 0 2px 5px -1px;
+            // box-shadow: inset rgba(0, 0, 0, 0.9) 0 -2px 5px, inset #e3ecece6 0 2px 5px, rgba(0, 0, 0, 0.8) 0 2px 5px -1px;
+        }
+    }
 }
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    display: inline;
+    // border: 1px solid red;
+    cursor: pointer;
+    padding: 18px;
+    // width: 50%;
+    text-align: left;
+    font-family: Source Sans Pro;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    position: relative;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active::before {
+    content:"";
+    display: block;
+    background-color:#C86DD7;
+    width: 161px;
+    height: 8px;
+    position: absolute;
+    bottom: 20px;
+    left: 17px;
+    z-index: -1;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: auto;
+    height: 115px;
+}
+
+span.accordion:after {
+    content: url(./../images/arrowDown.svg); /* Unicode character for "plus" sign (+) */
+    margin-left: 7px;
+}
+
+span.accordion.active:after {
+    content: url(./../images/arrowUp.svg); /* Unicode character for "minus" sign (-) */
+}
+
