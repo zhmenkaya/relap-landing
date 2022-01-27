@@ -11,13 +11,14 @@
             max-width: 1190px;
         }
         @media screen and (max-width:1130px) {
-            max-width: 1030px;
+            max-width: 1080px;
         }
         @media screen and (max-width:992px) {
-            max-width: 730px;
+            max-width: 861px;
         }
         @media screen and (max-width:768px) {
             max-width: 545px;
+            margin: 0 auto;
         }
         @media screen and (max-width:576px) {
             max-width: 500px;
@@ -44,15 +45,30 @@
     }
     &__subtitle{
         margin: 45px 0 18px 0;
+        @media screen and (max-width:768px) {
+            margin: 25px 0 18px 0;
+        }
+        @media screen and (max-width:360px) {
+            margin: 25px 0 17px 0;
+        }
     }
     &__title{
         margin-bottom: 55px;
+        @media screen and (max-width:992px) {
+            margin-bottom: 26px;
+        }
+        @media screen and (max-width:360px) {
+            margin-bottom: 40px;
+        }
         
     }
     &__accordion-box{
         max-width: 470px;
         display: flex;
         flex-direction: column;
+        @media screen and (max-width:768px) {
+            margin: 0 0 56px 0;
+        }
     }
     &__wrap-img{
         border-top-left-radius: 3px;
@@ -60,29 +76,16 @@
         position: relative;
         z-index: 5;
         margin-bottom: 128px;
-        -webkit-box-shadow: 33px -33px 0px 0px rgba(200, 109, 215, 1) inset;
-        -moz-box-shadow: 33px -33px 0px 0px rgba(200, 109, 215, 1) inset;
-        box-shadow: 33px -33px 0px 0px rgba(200, 109, 215, 1) inset;
-        // &::before{
-        //     content:'';
-        //     display: block;
-        //     width: 705px;
-        //     height: 544px;
-        //     position: absolute;
-        //     bottom: -33px;
-        //     left: -33px;
-        //     background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
-        //     border-top-left-radius: 3px;
-        //     border-bottom-left-radius: 3px;
-        //     z-index: -1;
-            // @media screen and (max-width:1280px) {
-            //     width: 520px;
-            //     height: 431px
-            // }
+        // -webkit-box-shadow: 33px -33px 0px 0px rgba(200, 109, 215, 1) inset;
+        // -moz-box-shadow: 33px -33px 0px 0px rgba(200, 109, 215, 1) inset;
+        // box-shadow: 33px -33px 0px 0px rgba(200, 109, 215, 1) inset;
+        @media screen and (max-width:1280px) {
+            width: 50%;
         }
-        // @media screen and (max-width:1280px) {
-        //     width: 50%;
-        // }
+        @media screen and (max-width:768px) {
+            width: 100%;
+        }
+    }
     &__image{
         width: 100%;
     }
@@ -101,28 +104,44 @@
         -webkit-box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.101959);
         box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.101959);
         position: absolute;
-        right: 43.61%;
+        right: 19.61%;
         top: 28.71%;
         z-index: 15;
         border:none;
+        @media screen and (max-width:360px) {
+            width: 58px;
+            height: 58px;
+        }
         &:hover{
-            // background: red;
             transform: scale(1.2);
             -webkit-transform: scale(1.2);
             -moz-transform: scale(1.2);
             -ms-transform: scale(1.2);
             -o-transform: scale(1.2);
-            // transition: 0.5s;
-            // -webkit-transition: 0.5s;
-            // -moz-transition: 0.5s;
-            // -ms-transition: 0.5s;
-            // -o-transition: 0.5s;
-            // box-shadow: inset rgba(0, 0, 0, 0.9) 0 -2px 5px, inset #e3ecece6 0 2px 5px, rgba(0, 0, 0, 0.8) 0 2px 5px -1px;
-            // -webkit-box-shadow: inset rgba(0, 0, 0, 0.9) 0 -2px 5px, inset #e3ecece6 0 2px 5px, rgba(0, 0, 0, 0.8) 0 2px 5px -1px;
-            // box-shadow: inset rgba(0, 0, 0, 0.9) 0 -2px 5px, inset #e3ecece6 0 2px 5px, rgba(0, 0, 0, 0.8) 0 2px 5px -1px;
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+            -moz-transition: 0.5s;
+            -ms-transition: 0.5s;
+            -o-transition: 0.5s;
+            box-shadow: inset rgba(0, 0, 0, 0.9) 0 -2px 5px, inset #e3ecece6 0 2px 5px, rgba(0, 0, 0, 0.8) 0 2px 5px -1px;
+            -webkit-box-shadow: inset rgba(0, 0, 0, 0.9) 0 -2px 5px, inset #e3ecece6 0 2px 5px, rgba(0, 0, 0, 0.8) 0 2px 5px -1px;
+            box-shadow: inset rgba(0, 0, 0, 0.9) 0 -2px 5px, inset #e3ecece6 0 2px 5px, rgba(0, 0, 0, 0.8) 0 2px 5px -1px;
+        }
+        @media screen and (max-width:1130px) {
+            right: 17.61%;
+            top: 19.71%;
+        }
+        @media screen and (max-width:768px) {
+            right: 42.61%;
+            top: 80.71%;
+        }
+        @media screen and (max-width:360px) {
+            right: 39.61%;
+            top: 76.71%;
         }
     }
 }
+
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
