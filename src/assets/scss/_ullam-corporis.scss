@@ -44,20 +44,18 @@
         justify-content: space-between;
         margin: 42px 0 48px 0;
     }
-    &__wrapper-image{
+    &__gallery-image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
         border-radius:3px    ;
         -webkit-border-radius:3px    ;
         -moz-border-radius:3px    ;
         -ms-border-radius:3px    ;
         -o-border-radius:3px    ;
-        &:hover{
-            background: #7F7F7F;
-            box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.10394);
-        }
-}
-    &__gallery-image{
-        width: 100%;
+        
     }
+
     &__btn{
         background: #C86DD7;
         align-self: center;
@@ -65,39 +63,71 @@
     }
 }
 
-.div-picture div {
-    width: 31.62393%;
-    height: 272px;
+.ullam-corporis__link-image{
     position: relative;
-    overflow: hidden;
-  }
-  
-  .div-picture .div-picture__div-opacity {
+    opacity: 1;
+}
+.ullam-corporis__link-image::before{
+    content:'';
     position: absolute;
-    padding-top: 181px;
-    padding-left: 32px;
+    display: block;
     top: 0;
+    right: 0;
     width: 100%;
     height: 100%;
-    background: #3200396e;
+    background:rgba(49, 0, 57, 0.5);
     opacity: 0;
-    -webkit-transition: opacity .5s;
-    transition: opacity .5s;
-  }
-  
-  .div-picture .div-picture__div-opacity:hover {
+    transition: opacity 0.4s ease;
+    -webkit-transition: opacity 0.4s ease;
+    -moz-transition: opacity 0.4s ease;
+    -ms-transition: opacity 0.4s ease;
+    -o-transition: opacity 0.4s ease;
+}
+
+.ullam-corporis__link-image:hover::before{
     opacity: 1;
-  }
-  
-  .div-picture .div-picture__div-opacity p {
+}
+
+.ullam-corporis__mask-name1{
     font-weight: bold;
     font-size: 24px;
     line-height: 32px;
     color: #FFFFFF;
+    margin-bottom: 9px;
+    opacity: 0;
+    position: absolute;
+    display: block;
+    transform: translate(32px, -104px);
+    -webkit-transform: translate(32px, -104px);
+    -moz-transform: translate(32px, -104px);
+    -ms-transform: translate(32px, -104px);
+    -o-transform: translate(32px, -104px);
+    transition: transform 0.8s ease 0s;
+    -webkit-transition: transform 0.8s ease 0s;
+    -moz-transition: transform 0.8s ease 0s;
+    -ms-transition: transform 0.8s ease 0s;
+    -o-transition: transform 0.8s ease 0s;
+}
+
+.ullam-corporis__mask-name1:hover, 
+.ullam-corporis__mask-name2:hover{
     opacity: 1;
-  }
-  
-  .div-picture .div-picture__div-opacity h6 {
-    opacity: 0.5;
-    color: #FFFFFF;
-  }
+}
+.ullam-corporis__mask-name2{
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 0;
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    display: block;
+    transform: translate(32px, -52px);
+    -webkit-transform: translate(32px, -52px);
+    -moz-transform: translate(32px, -52px);
+    -ms-transform: translate(32px, -52px);
+    -o-transform: translate(32px, -52px);
+    transition: transform 0.8s ease 0s;
+    -webkit-transition: transform 0.8s ease 0s;
+    -moz-transition: transform 0.8s ease 0s;
+    -ms-transition: transform 0.8s ease 0s;
+    -o-transition: transform 0.8s ease 0s;
+}
