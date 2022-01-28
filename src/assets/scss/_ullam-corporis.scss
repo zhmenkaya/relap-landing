@@ -88,6 +88,11 @@
     opacity: 1;
 }
 
+.ullam-corporis__link-image:hover .ullam-corporis__mask-name1,
+.ullam-corporis__link-image:hover .ullam-corporis__mask-name2{
+    opacity: 1;
+}
+
 .ullam-corporis__mask-name1{
     font-weight: bold;
     font-size: 24px;
@@ -97,11 +102,11 @@
     opacity: 0;
     position: absolute;
     display: block;
-    transform: translate(32px, -104px);
-    -webkit-transform: translate(32px, -104px);
-    -moz-transform: translate(32px, -104px);
-    -ms-transform: translate(32px, -104px);
-    -o-transform: translate(32px, -104px);
+    transform: translate(32px, -94px);
+    -webkit-transform: translate(32px, -94px);
+    -moz-transform: translate(32px, -94px);
+    -ms-transform: translate(32px, -94px);
+    -o-transform: translate(32px, -94px);
     transition: transform 0.8s ease 0s;
     -webkit-transition: transform 0.8s ease 0s;
     -moz-transition: transform 0.8s ease 0s;
@@ -109,10 +114,6 @@
     -o-transition: transform 0.8s ease 0s;
 }
 
-.ullam-corporis__mask-name1:hover, 
-.ullam-corporis__mask-name2:hover{
-    opacity: 1;
-}
 .ullam-corporis__mask-name2{
     font-size: 16px;
     line-height: 24px;
@@ -125,9 +126,9 @@
     -moz-transform: translate(32px, -52px);
     -ms-transform: translate(32px, -52px);
     -o-transform: translate(32px, -52px);
-    transition: transform 0.8s ease 0s;
-    -webkit-transition: transform 0.8s ease 0s;
-    -moz-transition: transform 0.8s ease 0s;
-    -ms-transition: transform 0.8s ease 0s;
-    -o-transition: transform 0.8s ease 0s;
+    transition: transform 1.5s ease 0s;
+    -webkit-transition: transform 1.5s ease 0s;
+    -moz-transition: transform 1.5s ease 0s;
+    -ms-transition: transform 1.5s ease 0s;
+    -o-transition: transform 1.5s ease 0s;
 }

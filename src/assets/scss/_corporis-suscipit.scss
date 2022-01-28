@@ -31,7 +31,7 @@
         }
     }
     &__wrapper{
-        margin:96px 0 0 0;
+        margin:96px 0 128px 0;
         display: flex;
         justify-content: space-between;
         @media screen and (max-width:768px) {
@@ -75,7 +75,6 @@
         border-bottom-left-radius: 3px;
         position: relative;
         z-index: 5;
-        margin-bottom: 128px;
         // -webkit-box-shadow: 33px -33px 0px 0px rgba(200, 109, 215, 1) inset;
         // -moz-box-shadow: 33px -33px 0px 0px rgba(200, 109, 215, 1) inset;
         // box-shadow: 33px -33px 0px 0px rgba(200, 109, 215, 1) inset;
@@ -104,11 +103,17 @@
         -webkit-box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.101959);
         box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.101959);
         position: absolute;
-        right: 19.61%;
-        top: 28.71%;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
         z-index: 15;
         border:none;
-        @media screen and (max-width:360px) {
+        @media screen and(max-width:360px){
             width: 58px;
             height: 58px;
         }
@@ -126,18 +131,6 @@
             box-shadow: inset rgba(0, 0, 0, 0.9) 0 -2px 5px, inset #e3ecece6 0 2px 5px, rgba(0, 0, 0, 0.8) 0 2px 5px -1px;
             -webkit-box-shadow: inset rgba(0, 0, 0, 0.9) 0 -2px 5px, inset #e3ecece6 0 2px 5px, rgba(0, 0, 0, 0.8) 0 2px 5px -1px;
             box-shadow: inset rgba(0, 0, 0, 0.9) 0 -2px 5px, inset #e3ecece6 0 2px 5px, rgba(0, 0, 0, 0.8) 0 2px 5px -1px;
-        }
-        @media screen and (max-width:1130px) {
-            right: 17.61%;
-            top: 19.71%;
-        }
-        @media screen and (max-width:768px) {
-            right: 42.61%;
-            top: 80.71%;
-        }
-        @media screen and (max-width:360px) {
-            right: 39.61%;
-            top: 76.71%;
         }
     }
 }
