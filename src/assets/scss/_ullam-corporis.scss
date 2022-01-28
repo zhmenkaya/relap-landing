@@ -3,17 +3,22 @@
     &__wrapper{
         display: flex;
         flex-direction: column;
+        @media screen and(max-width:768px){
+            margin-top: 130px;
+        }
     }
     &__top{
         display: flex;
         justify-content: space-between;
         margin: 61px 0 55px 0;
+        @media screen and(max-width:768px){
+            flex-direction: column;
+        }
     }
     &__subtitle{
         margin-bottom: 18px;
     }
-
-
+    
     &__text{
         max-width: 570px;
         margin-top: 49px;
@@ -22,9 +27,21 @@
         color: #333333;
         mix-blend-mode: normal;
         opacity: 0.5;
+        @media screen and(max-width:1130px){
+            max-width: 505px;
+        }
+        @media screen and(max-width:992px){
+            max-width: 375px;
+        }
+        @media screen and(max-width:768px){
+            max-width: 100%;
+        }
     }
     &__menu{
         display: flex;
+        @media screen and(max-width:576px){
+            flex-wrap: wrap;
+        }
     }
     &__link{
         text-decoration: none;
@@ -38,11 +55,29 @@
             font-weight: 600;
             opacity: 1;
         }
+        @media screen and(max-width:576px){
+            margin-right: 50px;
+            margin-bottom: 20px;
+        }
+        @media screen and(max-width:360px){
+            margin-right: 28px;
+            margin-bottom: 20px;
+        }
     }
     &__gallery-works{
         display: flex;
         justify-content: space-between;
         margin: 42px 0 48px 0;
+        @media screen and(max-width:1280px){
+            gap: 20px;
+        }
+        @media screen and(max-width:992px){
+            gap: 10px;
+        }
+        @media screen and(max-width:576px){
+            gap: 0px;
+            flex-wrap: wrap;
+        }
     }
     &__gallery-image{
         width: 100%;
@@ -66,6 +101,10 @@
 .ullam-corporis__link-image{
     position: relative;
     opacity: 1;
+    @media screen and(max-width:576px){
+        width: 100%;
+        margin-bottom: 17px;
+    }
 }
 .ullam-corporis__link-image::before{
     content:'';
@@ -112,6 +151,14 @@
     -moz-transition: transform 0.8s ease 0s;
     -ms-transition: transform 0.8s ease 0s;
     -o-transition: transform 0.8s ease 0s;
+    @media screen and(max-width:768px){
+        font-size: 20px;
+        line-height: 28px;
+    }
+    @media screen and(max-width:576px){
+        font-size: 24px;
+        line-height: 32px;
+    }
 }
 
 .ullam-corporis__mask-name2{
@@ -131,4 +178,12 @@
     -moz-transition: transform 1.5s ease 0s;
     -ms-transition: transform 1.5s ease 0s;
     -o-transition: transform 1.5s ease 0s;
+    @media screen and(max-width:768px){
+        font-size: 14px;
+        line-height: 20px;
+    }
+    @media screen and(max-width:576px){
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
