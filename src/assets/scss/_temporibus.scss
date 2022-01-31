@@ -1,0 +1,22 @@
+.temporibus {
+    background: #3023AE;
+    &__wrapper {
+        display: flex;
+    }
+        &__img-block {
+        box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.101959);
+    }
+        &__content {
+    }
+        &__subtitle {
+            color:#FFFFFF;
+    }
+        &__title {
+            color:#FFFFFF;
+    }
+        &__text {
+    }
+        &__btn {
+        background:#FFC300;
+    }
+}
