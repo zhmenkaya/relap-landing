@@ -2,21 +2,70 @@
     background: #3023AE;
     &__wrapper {
         display: flex;
+        justify-content: space-between;
+        padding: 160px 0 212px;
     }
-        &__img-block {
-        box-shadow: 16px 16px 48px rgba(0, 0, 0, 0.101959);
+        &__inner-image {
+        min-width: 431px ;
+        border: 1px solid white;
+        margin: 0 0 0 212px;
     }
         &__content {
     }
         &__subtitle {
             color:#FFFFFF;
+            margin: 3px 0 18px;
     }
         &__title {
             color:#FFFFFF;
+            margin-bottom: 23px;
     }
         &__text {
+            max-width: 470px;
+            color:#FFFFFF;
+            margin-bottom: 32px;
     }
         &__btn {
         background:#FFC300;
     }
+}
+
+.temporibus__block-image{
+    min-width: 370px;
+    position: relative;
+    opacity: 1;
+    border: 1px solid yellow;
+    padding: 16px 30px 10px 31px;
+}
+.temporibus__block-image::before{
+    content:'';
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(49, 0, 57, 0.5);
+    opacity: 1;
+    // background: #FFFFFF;
+    box-shadow: 16px 16px 48px rgba(49, 0, 57, 0.5);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.temporibus__image-photo-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url();
+}
+.temporibus__image-photo-2 {
+}
+.temporibus__image-photo-3 {
+}
+.temporibus__image-photo-4 {
+}
+.temporibus__image-photo-5 {
 }
