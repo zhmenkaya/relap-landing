@@ -1,0 +1,54 @@
+.officis {
+    &__wrapper{
+    }
+    &__top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        
+    }
+    &__text {
+        max-width: 570px;
+        text-align: center;
+    }
+    &__cards-block {
+        display: flex;
+    }
+    &__list {
+        display: flex;
+    }
+    &__item {
+        list-style-type: none;
+    }
+    &__link-img {
+        text-decoration: none;
+    }
+    &__partner-img {
+    }
+}   
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    &__wrap-img {
+        width: 64px;
+        height: 64px;
+        border-radius:50%;
+        -webkit-border-radius:50%;
+        -moz-border-radius:50%;
+        -ms-border-radius:50%;
+        -o-border-radius:50%;
+}
+    &__img{
+        width: 100%;
+        object-fit: cover;
+    }
+    &__quote { }
+    &__partners {
+    }
+    
+}
+
