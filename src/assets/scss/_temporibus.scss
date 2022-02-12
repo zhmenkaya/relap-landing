@@ -1,18 +1,89 @@
 .temporibus {
     background: #3023AE;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    &::before{
+        content:"";
+        display: block;
+        width: 323px;
+        height: 323px;
+        position: absolute;
+        background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+        bottom: -16%;
+        left: -11%;
+        z-index: 5;
+        border-radius:50%    ;
+        -webkit-border-radius:50%    ;
+        -moz-border-radius:50%    ;
+        -ms-border-radius:50%    ;
+        -o-border-radius:50%    ;
+        @media screen and (max-width:576px) {
+            bottom: -23%;
+            left: -18%;
+        }
+    }
+    &::after{
+        content:"";
+        display: block;
+        width: 140px;
+        height: 140px;
+        position: absolute;
+        background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+        bottom: -13%;
+        left: 50%;
+        z-index: 5;
+        border-radius:50%    ;
+        -webkit-border-radius:50%    ;
+        -moz-border-radius:50%    ;
+        -ms-border-radius:50%    ;
+        -o-border-radius:50%    ;
+        @media screen and (max-width:768px) {
+            bottom: -10%;
+        }
+        @media screen and (max-width:576px) {
+            bottom: -12%;
+            left: 85%;
+        }
+}
+
     &__wrapper {
         display: flex;
         justify-content: space-between;
-        padding: 160px 0 212px;
+        padding: 160px 15px 212px;
+        @media screen and (max-width:768px) {
+            flex-direction: column;
+            align-items:center;
+            padding: 100px 15px 80px;
+        }
+        @media screen and (max-width:576px) {
+            padding: 100px 39px 80px;
+        }
+        @media screen and (max-width:360px) {
+            padding: 100px 55px 80px;
+        }
     }
         &__inner-image {
-        margin: 0 0 0 212px;
+        margin: 0 0 0 100px;
         min-width: 370px;
         min-height: 370pz;
         position: relative;
         opacity: 1;
         z-index: 2;
-        // border: 1px solid yellow;
+        
+        @media screen and (max-width:1130px) {
+            margin: 0 0 0 50px;
+        }
+        @media screen and (max-width:992px) {
+            margin: 0 40px 0 0;
+        }
+        @media screen and (max-width:768px) {
+            margin: 0 0 43px 0;
+        }
+        @media screen and (max-width:576px) {
+            min-width: 297px;
+            min-height: 297px;
+        }
         &::before{
             content:'';
             position: absolute;
@@ -30,6 +101,23 @@
             -ms-border-radius: 50%;
             -o-border-radius: 50%;
         }
+        &:hover{
+            transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            transition: transform 3s ease-in-out;
+            -webkit-transition: transform 3s ease-in-out;
+            -moz-transition: transform 3s ease-in-out;
+            -ms-transition: transform 3s ease-in-out;
+            -o-transition: transform 3s ease-in-out;
+}
+    }
+    &__content{
+        @media screen and (max-width:768px) {
+            z-index: 20;
+        }
     }
         &__image {
             width: 100%;
@@ -42,6 +130,10 @@
         &__title {
             color:#FFFFFF;
             margin-bottom: 23px;
+            @media screen and (max-width:768px) {
+                font-size: 40px !important;
+                line-height: 48px !important;
+            }
     }
         &__text {
             max-width: 470px;
@@ -62,34 +154,175 @@
     bottom: 0;
     left: -31px;
     width: 170px;
-    height: 170px;
-    
+    height: 170px;  
+    &:hover{
+        transform: scale(1.4);
+        -webkit-transform: scale(1.4);
+        -moz-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        -o-transform: scale(1.4);
+        transition: transform 2s linear;
+        -webkit-transition: transform 2s linear;
+        -moz-transition: transform 2s linear;
+        -ms-transition: transform 2s linear;
+        -o-transition: transform 2s linear;
+}
+    @media screen and (max-width:576px) {
+        width: 137px;
+        height: 137px;
+        left: -18px;
+    }  
+    @media screen and (max-width:360px) {
+        left: -18px;
+    } 
 }
 .temporibus__image-photo-2 {
-    top: 0;
+    background-image: url(./../images/oval-2.png) ;
+    top: 221px;
     right: 0;
     bottom: 0;
     left: 0;
-    width: 170px;
-    height: 170px;
+    width: 114px;
+    height: 114px;
+    &:hover{
+        transform: scale(1.4);
+        -webkit-transform: scale(1.4);
+        -moz-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        -o-transform: scale(1.4);
+        transition: transform 2s linear;
+        -webkit-transition: transform 2s linear;
+        -moz-transition: transform 2s linear;
+        -ms-transition: transform 2s linear;
+        -o-transition: transform 2s linear;
+}
+    @media screen and (max-width:576px) {
+        width: 92px;
+        height: 92px;
+        top: 201px;
+        left: -12px;
+    } 
+    @media screen and (max-width:400px) {
+        top: 181px;
+        left: 7px;
+        }
 }
 .temporibus__image-photo-3 {
-    top: 0;
+    background-image: url(./../images/oval-3.png) ;
+    top: 35px;
     right: 0;
     bottom: 0;
-    left: 0;
+    left: 283px;
+    width: 114px;
+    height: 114px;
+    &:hover{
+        transform: scale(1.4);
+        -webkit-transform: scale(1.4);
+        -moz-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        -o-transform: scale(1.4);
+        transition: transform 2s linear;
+        -webkit-transition: transform 2s linear;
+        -moz-transition: transform 2s linear;
+        -ms-transition: transform 2s linear;
+        -o-transition: transform 2s linear;
+}
+    @media screen and (max-width:576px) {
+        width: 92px;
+        height: 92px;
+        top: 30px;
+        left: 287px;
+    } 
+    @media screen and (max-width:445px) {
+        left: 272px;
+    }
+    @media screen and (max-width:425px) {
+        left: 245px;
+    }
+    @media screen and (max-width:400px) {
+        left: 233px;
+    }
+    @media screen and (max-width:360px) {
+        left: 210px;
+    }
 }
 .temporibus__image-photo-4 {
-    top: 0;
-    right: 0;
+    background-image: url(./../images/oval-4.png) ;
+    top: 296px;
+    right: 0; 
     bottom: 0;
-    left: 0;
+    left: 220px;
+    width: 82px;
+    height: 82px;
+    &:hover{
+        transform: scale(1.4);
+        -webkit-transform: scale(1.4);
+        -moz-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        -o-transform: scale(1.4);
+        transition: transform 2s linear;
+        -webkit-transition: transform 2s linear;
+        -moz-transition: transform 2s linear;
+        -ms-transition: transform 2s linear;
+        -o-transition: transform 2s linear;
+}
+    @media screen and (max-width:576px) {
+        width: 66px;
+        height: 66px;
+        top: 310px;
+        left: 233px
+    } 
+    @media screen and (max-width:445px) {
+        top: 279px;
+    }
+    @media screen and (max-width:425px) {
+        top: 258px;
+        left: 212px;
+    }
+    @media screen and (max-width:400px) {
+        top: 241px;
+        left: 184px;
+    }
 }
 .temporibus__image-photo-5 {
-    top: 0;
+    background-image: url(./../images/oval-5.png) ;
+    top: 220px;
     right: 0;
     bottom: 0;
-    left: 0;
+    left: 334px;
+    width: 50px;
+    height: 50px;
+    
+    &:hover{
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        transition: transform 2s linear;
+        -webkit-transition: transform 2s linear;
+        -moz-transition: transform 2s linear;
+        -ms-transition: transform 2s linear;
+        -o-transition: transform 2s linear;
+}
+    @media screen and (max-width:576px) {
+        width: 40px;
+        height: 40px;
+        top: 220px;
+        left: 334px;
+    } 
+    @media screen and (max-width:445px) {
+        top: 194px;
+        left: 321px;
+    }
+    @media screen and (max-width:425px) {
+        top: 186px;
+        left: 296px;
+    }
+    @media screen and (max-width:400px) {
+        top: 176px;
+        left: 269px;
+    }
 }
 
 .background{

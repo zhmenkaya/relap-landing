@@ -1,5 +1,34 @@
 .fugiat-quo{
     background:#FFFFFF;
+    position: relative;
+    @media screen and (max-width:576px) {
+        display: none;
+    }
+    &::after{
+        content:'';
+        position: absolute;
+        background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+        display: block;
+        bottom: -22%;
+        left: 37%;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%        ;
+        -webkit-border-radius: 50%        ;
+        -moz-border-radius: 50%        ;
+        -ms-border-radius: 50%        ;
+        -o-border-radius: 50%        ;
+        z-index: 6;
+        @media screen and (max-width:992px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media screen and (max-width:768px) {
+            left: 58%;
+        }
+        @media screen and (max-width:576px) {
+            left: 88%;
+        }
+}
     &__wrapper{
         margin: 71px 0 80px;
         display: flex;
