@@ -6,10 +6,14 @@
         justify-content: space-between;
         @media screen and (max-width:992px) {
             flex-wrap: wrap;
+            margin: 45px 0 112px;
         }
     }
     &__left-block {
         margin-right: 50px;
+        @media screen and (max-width:992px) {
+            margin: 0 0 60px 0;
+        }
     }
     &__subtitle {
         margin: 61px 0 18px;
@@ -24,8 +28,6 @@
     }
     &__btn {
         background:#C86DD7;
-    }
-    &__card {
     }
 }
 
@@ -45,7 +47,20 @@
     -webkit-box-shadow: -30px 32px 0px 0px rgba(200, 109, 215, 1);
     -moz-box-shadow: -30px 32px 0px 0px rgba(200, 109, 215, 1);
     box-shadow: -30px 32px 0px 0px rgba(200, 109, 215, 1);
-
+    @media screen and (max-width:1130px) {
+        padding: 300px 0 46px 38px;
+    }
+    @media screen and (max-width:992px) {
+        margin-left: 30px;
+        padding: 230px 0 46px 36px;
+        border: none;
+    }
+    @media screen and (max-width:768px) {
+        padding: 180px 0 46px 32px;
+    }
+    @media screen and (max-width:576px) {
+        padding: 120px 0 46px 30px;
+    }
     &__title {
         font-family: "Poppins", serif;
         font-weight: 700;
@@ -57,6 +72,12 @@
         opacity: 0.5;
         margin-bottom: 16px;
         max-width: 470px;
+        @media screen and (max-width:768px) {
+            max-width: 400px;
+        }
+        @media screen and (max-width:576px) {
+            max-width: 350px;
+        }
     }
     &__bottom{
         display: flex;

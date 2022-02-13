@@ -142,6 +142,10 @@ body {
     @media screen and (max-width:992px) {
         font-size: 48px;
     }
+    @media screen and (max-width:576px) {
+        font-size: 44px;
+        line-height: 48px;
+    }
     @media screen and (max-width:360px) {
         font-size: 36px;
         line-height: 48px;
