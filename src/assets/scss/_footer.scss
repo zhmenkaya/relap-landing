@@ -1,10 +1,124 @@
 .footer{
     background: url(./../images/footer-background.png) no-repeat;
+    &__wrapper {
+        padding: 135px 0 74px;
+        @media screen and (max-width:1130) {
+            padding: 135px 20px 74px;
+        }
+    }
+    &__top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 160px;
+    }
+    &__title {
+        margin-bottom: 23px;
+    }
+    &__text {
+        color: #333333;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 32px;
+        max-width: 570px;
+    }
+    &__connection {
+        display: flex;
+    }
+    &__form-connection {
+    }
+    &__connection-inner {
+        
+    }
+    &__connection-item {
+        width: 370px;
+        padding: 14px 16px;
+        background: #FFFFFF;
+        border: 1px solid #DADADA;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        margin-right: 30px;
+        &::placeholder{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #333333;
+            opacity: 0.5;
+        }
+}
+    &__btn {
+        background: #C86DD7;
+    }
+    &__line {
+        background: #000000;
+        opacity: 0.1;
+    }
+    &__bottom {
+        margin: 65px 0 0 0;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__info {
+    }
+    &__info-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    &__social-menu {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 14px;
+    }
+    &__social-link {
+        display: block;
+        margin-right: 8px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__social-icon {
+        fill:#C86DD7;
+        height: 32px;
+        width: 32px;
+        
+
+    }
+    &__copyright {
+        font-weight: 400;
+        font-size: 16px;
+        color: #333333;
+        opacity: 0.5;
+    }
 }
 
 
-.footer__icon{
-    fill:#C86DD7;
-    // width: 32px;
-    height: 32px;
+.info {
+    font-size: 16px;
+    line-height: 24 / 16 *100%;
+    color: #333333;    
+    &__title {
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #333333;
+    }
+    &__list {
+        list-style-type: none;
+    }
+    &__item {
+        font-weight: 400;
+        opacity: 0.5;
+    }
+}
+
+
+
+.info__list li:not(:last-child) {
+        margin-bottom: 8px;
 }
