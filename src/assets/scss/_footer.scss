@@ -2,15 +2,23 @@
     background: url(./../images/footer-background.png) no-repeat;
     &__wrapper {
         padding: 135px 0 74px;
-        @media screen and (max-width:1130) {
+        @media screen and (max-width:1130px) {
             padding: 135px 20px 74px;
+        }
+        @media screen and (max-width:576px) {
+            padding: 70px 15px 58px;
         }
     }
     &__top {
+        padding: 0 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 160px;
+        @media screen and (max-width:768px) {
+            margin-bottom: 60px;
+        }
+
     }
     &__title {
         margin-bottom: 23px;
@@ -22,9 +30,17 @@
         line-height: 24px;
         margin-bottom: 32px;
         max-width: 570px;
+        @media screen and (max-width:360px) {
+            max-width: 346px;
+            text-align:center;
+        }
     }
     &__connection {
         display: flex;
+        @media screen and (max-width:768px) {
+            flex-direction: column;
+            align-items:center;
+        }
     }
     &__form-connection {
     }
@@ -49,6 +65,16 @@
             color: #333333;
             opacity: 0.5;
         }
+        @media screen and (max-width:768px) {
+            margin: 0 0 20px 0;
+        }
+        @media screen and (max-width:576px) {
+            width: 346px;
+        }
+        @media screen and (max-width:360px) {
+            width: 300px;
+            margin: 0 14px 16px 14px;
+        }
 }
     &__btn {
         background: #C86DD7;
@@ -59,12 +85,24 @@
     }
     &__bottom {
         margin: 65px 0 0 0;
+        @media screen and (max-width:360px) {
+            margin: 55px 0 0 0;
+        }
     }
     &__inner{
         display: flex;
         justify-content: space-between;
+        @media screen and (max-width:768px) {
+            flex-wrap: wrap;
+        }
     }
     &__info {
+        margin-right: 45px;
+        @media screen and (max-width:360px) {
+            width: 100%;
+            margin:0 0 40px 0;
+        }
+
     }
     &__info-block{
         display: flex;
@@ -87,8 +125,18 @@
         fill:#C86DD7;
         height: 32px;
         width: 32px;
-        
-
+        &:hover{
+                transform: scale(1.2) rotate(360deg);
+                -webkit-transform: scale(1.2) rotate(360deg);
+                -moz-transform: scale(1.2) rotate(360deg);
+                -ms-transform: scale(1.2) rotate(360deg);
+                -o-transform: scale(1.2) rotate(360deg);
+                transition: 0.8s;
+                -webkit-transition: 0.8s;
+                -moz-transition: 0.8s;
+                -ms-transition: 0.8s;
+                -o-transition: 0.8s;
+        }
     }
     &__copyright {
         font-weight: 400;
@@ -102,7 +150,10 @@
 .info {
     font-size: 16px;
     line-height: 24 / 16 *100%;
-    color: #333333;    
+    color: #333333;   
+    @media screen and (max-width:768px) {
+        margin-bottom: 58px;
+    } 
     &__title {
         margin-bottom: 8px;
         font-weight: 600;
